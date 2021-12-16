@@ -1,0 +1,701 @@
+
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+/* ------------ FONTAWESOME ------------ */
+@font-face {
+    font-family: "FontAwesome";
+    src: url("https://fontawesome.com/v5.15/icons/envelope?style=solid");
+}
+
+/* ------------ RESET  ------------ */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* ------------ ENCABEZADO ------------ */
+
+header {
+    height: 60px;
+    background-color: #8ae9b3;
+    background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    width: 115px;
+}
+
+.menu a {
+    color:white;
+    font-size: 18px;
+    padding: 0 10px;
+    transition: 0.4s;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;    
+}
+
+.unhide-menu,
+.hide-menu {
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.unhide-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.unhide-menu:hover,
+.hide-menu:hover {
+    color: #448a62;    
+}
+
+#check {
+    display: none;
+}
+
+/* ----------------- SECCIÓN INICIO ----------------- */
+
+main{
+    padding-top: 60px;
+}
+
+/* ------------ BANNER Inicio ------------ */
+
+#banner {
+    padding: 0 50px;
+    background-image: url(https://drive.google.com/uc?id=1GkvzNS6Criiaw9ytUFXYV3e1kOZacVqC);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#banner::before {
+    content: '';
+    background: rgb(54, 54, 54, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    left: 0;
+}
+
+.contenido-banner {
+    color:white;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.contenido-banner h3 {
+    font-size: 50px;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+
+.botton-contact {
+    color:rgb(255, 255, 255);
+    border: 1px solid white;
+    font-weight: 500;
+    margin: 10px;
+    padding: 11px 28px;
+    align-self: baseline;
+    transition:  all 0.4s;
+    text-decoration: none;
+}
+
+.botton-contact:hover {
+    background: rgb(54, 54, 54, 0.5);
+}
+
+/* ------------ PRESENTACIÓN Nuestras variedades ------------ */
+
+#nuestras_variedades{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: justify-content;
+    text-align: center;
+}
+
+#nuestras_variedades img {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+#nuestras_variedades img:hover {
+    transform: translate(0, -15px);
+}
+
+#nuestras_variedades div {
+    padding: 30px 30px;
+}
+
+#nuestras_variedades div h4 {
+    color: black;
+    font-size: 30px;
+    margin: 15px 0px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#nuestras_variedades div p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.botton-more {
+    display: inline-block;
+    color: #6ccc95;
+    padding: 10px 30px;
+    border: 2px solid #6ccc95;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.botton-more:hover {
+    background: rgba(146, 219, 158, 0.9);;
+    color:white;
+}
+
+/* ----------------- SECCIÓN NOSOTROS ----------------- */
+
+/* ------------ BANNER Nosotros  ------------ */
+
+#banner-nosotros {
+    padding: 0 50px;
+    background-image: url(https://drive.google.com/uc?id=1bfbsATVWwNP0-5aFVEJ0odL6olgruvwE);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nanum Pen Script', cursive;
+}
+/*
+#banner-nosotros::before {
+    content: '';
+    background: rgb(54, 54, 54, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    left: 0;
+} */
+
+.contenido-banner p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#presentacion-nosotros {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#presentacion-nosotros div {
+    padding: 30px 30px;
+}
+
+#presentacion-nosotros div h4 {
+    color: black;
+    font-size: 40px;
+    margin: 15px 0px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#presentacion-nosotros div p {
+    color: black;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* ----------------- SECCIÓN PRODUCTOS ----------------- */
+
+/* ------------ PRESENTACIÓN de productos ------------ */
+
+.container-productos {
+    width: 100%;
+    display: flex;
+}
+
+.card {
+    width: 100%;
+    margin:15px;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card .contenido {
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.card .contenido h3 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.card .contenido h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: black;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.card .contenido p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* ------------ SECCIÓN RECETAS  ------------ */
+
+/* ------------ BANNER recetas ------------ */
+
+#banner_recetas {
+    padding: 0 50px;
+    background-image: url(https://drive.google.com/uc?id=1Pac1qG27BgAmbQf0mehTlPxxAgnT8Hu6);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nanum Pen Script', cursive;
+}
+/*
+#banner_recetas::before {
+    content: '';
+    background: rgb(54, 54, 54, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 95vh;
+    left: 0;
+}*/
+
+.contenido-banner-recetas {
+    position: relative;
+    color:white;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.contenido-banner-recetas h3 {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner-recetas h3 span {
+    font-weight: 600;
+}
+
+/* ------------ PRESENTACIÓN Recetas ------------ */
+
+#presentacion-recetas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#presentacion-recetas div {
+    padding: 15px 16px;
+    width: 55%;
+    height: 76vh;
+}
+
+#presentacion-recetas div h4 {
+    color: black;
+    font-size: 35px;
+    margin: 15px 0px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#presentacion-recetas div p {
+    color: black;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* ------------ VIDEO ------------ */
+
+video{
+    width: 55%;
+    height: 76vh;
+    padding: 24px 16px;
+}
+
+/* ------------ ICONOS DE INFORMACIÓN ------------ */
+
+#iconos {
+    padding: 0px 50px;
+    background-color: white;
+}
+
+#contenido-iconos {
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#contenido-iconos img{
+    width: 100px;
+}
+/*
+#contenido-iconos img:hover {
+    transform: translate(0, -15px);
+}*/
+
+#contenido-iconos div i{
+    color:#6b6d6c;
+}
+
+#contenido-iconos div {
+    flex: 1;
+    margin:50px 0px;
+}
+
+#contenido-iconos div h4 {
+    color:black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px 0;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#contenido-iconos div h5 {
+    color:#434745;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bolder;
+    margin-top: 10px 0;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+#contenido-iconos div p {
+    color:black;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* ------------ REDES SOCIALES ------------ */
+
+.redes_sociales {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.redes_sociales a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.redes_sociales a:hover {
+    transform: translate(0, -5px);
+}
+
+.redes__sociales {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.redes__sociales a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 75px;
+}
+
+.redes__sociales a:hover {
+    transform: translate(0, -5px);
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #6ccc95;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color:#6ccc95;
+    background: white;
+}
+
+/* ------------ FORMULARIO DE CONTACTO ------------ */
+
+#form_contacto {
+    background-color: #7ec09a;
+    padding: 50px 0px;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#form_contacto h4 {
+    text-align: center;
+    font-size: 20px;
+    margin:20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#form_contacto form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#form__contacto {
+    background-color: #7ec09a;
+    padding: 50px 0px;
+    height: 89vh;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#form__contacto h4 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#form__contacto form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos_form {
+    display: flex;
+    font-size: 25px;
+}
+
+.datos_form div {
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    background: #b7e0c8;
+    border-radius: 10px;
+    border: 2px solid #b7e0c8;
+    padding: 10px 5px;
+    outline: 0;
+    color: rgb(71, 71, 71);
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #589773;
+    box-shadow: 0 0 0 1px #589773;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color:white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+}
+
+.botton-form .botton-more {
+    display: block;
+    border:1px solid white;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.botton-form .botton-more:hover {
+    background: #589773;
+}
+
+/* ------------ GOOGLE MAPS ------------ */
+
+.mapa{
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa h3{
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.mapa p{
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    padding: 10px;
+}
+
+/* ------------ PIE DE PAGINA ------------ */
+
+footer {
+    background-color: #8ae9b3;
+    background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
+    font-family: 'Dosis', sans-serif;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3px;
+}
+
+footer .contenedor p { 
+    font-size: 13px;
+}
+
+footer .contenedor p a { 
+    color: #366e4e;
+    padding-bottom: 2px;
+}
+
+.copy {
+    font-size: 10px;
+}
+
+.logotipo {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ------------ RESPONSIVE ------------ */
+
+@media (max-width:768px) {
+    /* ------------ HEADER  ------------ */
+    .unhide-menu,
+    .hide-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #8ae9b3;
+        background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
+        right: -100%;
+        top:60px;
+        text-align: center;
+        padding: 100px, 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .hide-menu {
+        position: absolute;
+        top:2px;
+        right: 60px;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    /* ------------ NUESTRAS VARIEDADES  ------------ */
+
+    #nuestras_variedades {
+        flex-direction: column;
+    }
+
+    /* ------------ FORMULARIO  ------------ */
+
+    .datos_form {
+        flex-direction: column;
+    }
+
+    #form__contacto {
+        background-color: #7ec09a;
+        padding: 50px 0px;
+        height: 100%;
+        color: white;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    
+    /* ------------ ICONOS  ------------ */
+    #contenido-iconos{
+        flex-direction: column;
+    }
+}
