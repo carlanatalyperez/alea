@@ -9,26 +9,28 @@
         <link rel="icon" href="https://drive.google.com/uc?id=1G3DulsLG96nHQWa8aMDCGN-P42hR1uwb" type="imagen/png" sizes="16x16"> <!-- LOGO DE LA PESTAÑA -->
         <link rel="stylesheet" href="../css/style.css"> <!-- ENLACE EXTERNO A CSS -->
         <script src="https://kit.fontawesome.com/26249973dc.js" crossorigin="anonymous"></script> <!-- ENLACE A ICONOS -->
-        <title> Alea Health Food Store </title> <!-- TITULO DE LA PESTAÑA -->
+        <title> Health Food Store - Alea </title> <!-- TITULO DE LA PESTAÑA -->
     </head>
     <body>
-        <header> <!-- LOGO + MENU PRINCIPAL -->
-            <a href= "../index.html"><img class="logo" src="https://drive.google.com/uc?id=12HO74xqpOe0vSVN9Hy10Ezi6tnUhh7uz"  alt="logoalea"></a> <!-- LOGO -->
-            <input type="checkbox" id="check"> 
-            <label for="check" class="unhide-menu"> &#8801 </label>
-            <nav class="menu">
-                <a href= "../index.html"> INICIO </a> <!-- ENLACE A INICIO -->
-                <a href= "nosotros.html"> NOSOTROS </a>  <!-- ENLACE A NOSOTROS -->
-                <a href= "productos.html"> PRODUCTOS</a>  <!-- ENLACE A PRODUCTOS -->
-                <a href= "#"> RECETAS </a>  <!-- ENLACE A RECETAS -->
-                <a href= "contacto.html"> CONTACTO </a> <!-- ENLACE A CONTACTO -->
-                <label for="check" class="hide-menu"> &#215 </label>  
-            </nav>
-        </header>  
+        <header> <!-- Logo + Main menu -->
+            <div class="container">
+                <img class="logo" src="https://drive.google.com/uc?id=12HO74xqpOe0vSVN9Hy10Ezi6tnUhh7uz" alt="logoalea"> <!-- Logo -->
+                <input type="checkbox" id="menu-bar"> 
+                <label class="fas fa-hamburger" for="menu-bar"></label>
+                <nav class="menu"> <!-- Main menu -->
+                    <a href= "../index.html"> INICIO </a>
+                    <a href= "nosotros.html"> NOSOTROS </a> 
+                    <a href= "productos.html"> PRODUCTOS</a> 
+                    <a href= "#"> RECETAS </a> 
+                    <a href= "contacto.html"> CONTACTO </a>
+                </nav>
+            </div>
+        </header> 
         <main>
-            <section id="banner_recetas">
-                <div class="contenido-banner-recetas">
-                    <h3><span>Alea va con todo, para todos y en todo momento. Es tradición por naturaleza.</span></h3>
+            <section id="banner">
+                <img src="https://drive.google.com/uc?id=1Pac1qG27BgAmbQf0mehTlPxxAgnT8Hu6" alt="banner-recetas">
+                <div class="container">
+                    <h3><span> Alea va con todo, para todos y en todo momento. Es tradición por naturaleza.</span></h3>
                     <a href="../secciones/contacto.html" class="botton-contact"> CONSEGUILAS </a>
                 </div>
             </section>
@@ -81,15 +83,15 @@
                 <i class="fab fa-whatsapp"></i>
             </a>
         </main>
-        <footer> <!-- PIE DE PÁGINA --> 
+        <footer> <!-- PIE DE PÁGINA -->  
             <div class="logotipo">
-                <img src="https://drive.google.com/uc?id=1B0l1lGYBfqWunoSQpDjQ90nQzw3ugUD7" width="100" height="50" alt="LogoAlea">
+                <img src="https://drive.google.com//uc?id=1B0l1lGYBfqWunoSQpDjQ90nQzw3ugUD7" width="100" height="50" alt="LogoAlea">
             </div>
-            <div class="contenedor">
-                <p class="copy"> &copy; 2021 <b> <a href="../index.html"> Alea </a></b>- Todos los derechos reservados.</p>
+            <div class="container">
+                <p class="copy"> &copy; 2021 <b> <a href="#"> Alea </a></b>- Todos los derechos reservados.</p>
             </div>
-            <div class="contenedor">
-                <p> Desarrollado por <a href= "https://www.linkedin.com/in/carla-nataly-perez-baa279118/"> <b>Nataly Perez</b></a> </p>
+            <div class="container">
+                <p> Desarrollado por <a href= "https://www.linkedin.com/in/carla-nataly-perez-baa279118/"><b>Nataly Perez</b></a></p>
             </div>
         </footer>
     </body>
