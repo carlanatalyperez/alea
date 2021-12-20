@@ -36,28 +36,23 @@ header {
     left:0;
     z-index: 100;
 }
-
+header .container {
+    display: table;
+}
 header label {
     float: right;
     font-size: 28px;
     margin: 15px 15px;
     cursor: pointer;
 }
-
-header .container {
-    display: table;
-}
-
 .logo {
     width: 85px;
     float:left;
     margin: -6px;
 }
-
 #menu-bar {
     display: none;
 }
-
 .menu {
     position: absolute;
     background-color: #8ae9b3;
@@ -69,7 +64,6 @@ header .container {
     transition: all 0.5s;
     transform: translateX(-100%);
 }
-
 .menu a {
     display: block;
     color: white;
@@ -80,14 +74,14 @@ header .container {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
 }
-
 .menu a:hover {
     color: #448a62;  
 }
-
 #menu-bar:checked ~ .menu {
     transform: translateX(0%);
 } 
+
+/* ------------ Responsive  ------------ */
 
 @media (min-width:1024px){
     .menu {
@@ -101,39 +95,26 @@ header .container {
         display: flex;
         font-family: 'Nanum Pen Script', cursive;
     }
-
     header .container label {
         display: none;
     }
-
     .menu a {
         border:none;
     }
-
     .container {
         width: 1200px;
     }
-
 }
-/* ------------ Imagenes ------------ */
 
-
-/* ------------ BANNER INICIO ------------ */
+/* ------------ SECCIÓN BANNER ------------ */
 
 section {
     width: 100%;
 }
-
 #banner {
     margin-top: 60px;
     position: relative;
 }
-
-#banner img {
-    width: 100%;
-    height: 100%;
-}
-
 #banner .container {
     position: absolute;
     top:50%;
@@ -141,13 +122,15 @@ section {
     transform: translateX(-50%) translateY(-50%);
     color: white;
 }
-
+#banner img {
+    width: 100%;
+    height: 100%;
+}
 #banner h1 {
     font-size: 25px;
     font-family: 'Nanum Pen Script', cursive;
 }
-
-#banner a{
+#banner a {
     display: block;
     width: 80px;
     color: white;
@@ -158,11 +141,11 @@ section {
     font-size: 10px;
     font-family: 'Dosis', sans-serif;
 }
-
 #banner a:hover{
     background: rgba(27, 27, 27, 0.5);
 }
 
+/* ------------ Responsive  ------------ */
 
 @media (min-width:480px){
     #banner h1{
@@ -174,7 +157,6 @@ section {
         width: 130px;
         text-align: center;
     }
-
 }
 
 @media (min-width:768px){
@@ -204,10 +186,10 @@ section {
         width: 130px;
         text-align: center;
     }
-
 }
 
-/* ------------ ICONOS INFORMATIVOS  ------------ */
+
+/* ------------ SECCIÓN ICONOS INFORMATIVOS  ------------ */
 
 #icons_information h3 {
     text-align: center;
@@ -215,20 +197,17 @@ section {
     font-weight: 700;
     font-size: 25px;
 }
-
 #icons_information h4 {
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-size: 10px;
 }
-
 #icons_information p {
     color:black;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 15px;
     text-align: center;
 }
-
 #icons_information .container {
     display: flex;
     justify-content: center;
@@ -236,19 +215,15 @@ section {
     text-align: center;
     margin-bottom: 25px;
 }
-
 #icons_information article {
     margin:15px;
 }
-
 #icons_information img {
     width: 100px;
 }
-
 #icons_information img:hover {
     transform: translate(0, -15px);
 }
-
 .botton-more {
     display: inline-block;
     color: #6ccc95;
@@ -259,11 +234,12 @@ section {
     transition: all 0.4s;
     text-decoration: none;
 }
-
 .botton-more:hover {
     background: rgba(146, 219, 158, 0.9);;
     color:white;
 }
+
+/* ------------ Responsive  ------------ */
 
 @media (min-width:1024px){
 
@@ -333,11 +309,13 @@ section {
     transition: all 0.4s;
     text-decoration: none;
 }
-
 .botton-more:hover {
     background: rgba(146, 219, 158, 0.9);;
     color:white;
 }
+
+/* ------------ Responsive  ------------ */
+
 @media (min-width:1024px){
 
     #our_products img {
@@ -349,7 +327,6 @@ section {
     }
 }
 
-
 /* ------------ FORMULARIO DE CONTACTO ------------ */
 
 #form_contacto {
@@ -358,19 +335,16 @@ section {
     color: white;
     font-family: 'Nanum Pen Script', cursive;
 }
-
 #form_contacto h4 {
     text-align: center;
     font-size: 20px;
     margin:20px;
     font-family: 'Dosis', sans-serif;
 }
-
 #form_contacto form {
     max-width: 80%;
     margin: 0 auto;
 }
-
 #form__contacto {
     background-color: #7ec09a;
     padding-top: 60px;
@@ -378,34 +352,28 @@ section {
     color: white;
     font-family: 'Nanum Pen Script', cursive;
 }
-
 #form__contacto h4 {
     text-align: center;
     font-size: 20px;
     margin: 15px;
     font-family: 'Dosis', sans-serif;
 }
-
 #form__contacto form {
     max-width: 80%;
     margin: 0 auto;
 }
-
 .datos_form {
     display: flex;
     font-size: 25px;
 }
-
 .datos_form div {
     padding: 10px;
     flex: 1;
 }
-
 form label{
     display: block;
     margin-bottom: 10px;
 }
-
 form input,
 form textarea {
     background: #b7e0c8;
@@ -417,19 +385,16 @@ form textarea {
     width: 100%;
     font-family: 'Dosis', sans-serif;
 }
-
 form input:focus,
 form textarea:focus{
     border-color: #589773;
     box-shadow: 0 0 0 1px #589773;
 }
-
 form input::placeholder,
 form textarea::placeholder{
     color:white;
     font-family: 'Dosis', sans-serif;
 }
-
 .mensaje {
     display: flex;
     flex-direction: column;
@@ -437,7 +402,6 @@ form textarea::placeholder{
     font-family: 'Nanum Pen Script', cursive;
     font-size: 25px;
 }
-
 .botton-form .botton-more {
     display: block;
     border:1px solid white;
@@ -445,10 +409,11 @@ form textarea::placeholder{
     text-align: center;
     transition: 0.4s;
 }
-
 .botton-form .botton-more:hover {
     background: #589773;
 }
+
+/* ------------ Responsive  ------------ */
 
 @media (min-width:1024px){
 
@@ -458,17 +423,14 @@ form textarea::placeholder{
         margin: 40px;
         font-family: 'Dosis', sans-serif;
     }
-    
     #form__contacto form {
         max-width: 80%;
         margin: 0 auto;
     }
-    
     .datos_form {
         display: flex;
         font-size: 30px;
     }
-    
     .datos_form div {
         padding: 10px;
         flex: 1;
@@ -490,7 +452,6 @@ video{
     margin: 10px;
     cursor: pointer;
 }
-
 .redes_sociales a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -498,18 +459,15 @@ video{
     font-size: 30px;
     margin-top: 15px;
 }
-
 .redes_sociales a:hover {
     transform: translate(0, -5px);
 }
-
 .redes__sociales {
     width: 100%;
     text-align: center;
     padding: 2px;
     cursor: pointer;
 }
-
 .redes__sociales a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -517,11 +475,9 @@ video{
     font-size: 30px;
     justify-content: space-around;
 }
-
 .redes__sociales a:hover {
     transform: translate(0, -5px);
 }
-
 .btn-wsp {
     position: fixed;
     width: 55px;
@@ -537,12 +493,13 @@ video{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index: 100;
 }
-
 .btn-wsp:hover {
     text-decoration: none;
     color:#6ccc95;
     background: white;
 }
+
+/* ------------ Responsive  ------------ */
 
 @media (min-width:1024px){
 
@@ -552,7 +509,6 @@ video{
         padding: 2px;
         cursor: pointer;
     }
-
     .redes__sociales a {
         color: rgb(255, 255, 255);
         text-decoration: none;
@@ -565,21 +521,18 @@ video{
 
 /* ------------ ICONOS DE INFORMACIÓN ------------ */
 
-
 #icons h5 {
     text-align: center;
     font-family: 'Nanum Pen Script', cursive;
     font-weight: 700;
     font-size: 25px;
 }
-
 #icons p {
     color:black;
     font-family: 'Dosis', sans-serif;
     font-size: 15px;
     text-align: center;
 }
-
 #icons .container {
     display: flex;
     justify-content: center;
@@ -588,15 +541,15 @@ video{
     margin-bottom: 30px;
     color:#1d1d1dd2;
 }
-
 #article-container  i {
     width: 30px;
     align-items: center;
 }
-
 #icons article {
     margin:50px;
 }
+
+/* ------------ Responsive  ------------ */
 
 @media (min-width:1024px){
 
@@ -609,7 +562,6 @@ video{
     }
 }
 
-
 /* ------------ GOOGLE MAPS ------------ */
 
 .mapa{
@@ -617,12 +569,10 @@ video{
     padding: 20px;
     text-align: center;
 }
-
 .mapa h3{
     font-size: 30px;
     font-family: 'Dosis', sans-serif;
 }
-
 .mapa p{
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
@@ -636,28 +586,56 @@ footer {
     background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
     font-family: 'Dosis', sans-serif;
 }
-
 footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 10px;
 }
-
 footer .container p { 
     font-size: 13px;
 }
-
 footer .container p a { 
     color: #366e4e;
     padding-bottom: 2px;
 }
-
 .copy {
     font-size: 20px;
 }
-
 .logotipo {
     width: 100%;
     text-align: center;
+}
+
+#presentacion-nosotros {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#presentacion-nosotros div {
+    padding: 30px 10px 30px;
+    height: 80vh;
+}
+
+#presentacion-nosotros div h4 {
+    color: black;
+    font-size: 40px;
+    margin: 15px 0px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#presentacion-nosotros div p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+@media (min-width:1024px){
+
+    #presentacion-nosotros div p {
+        color: black;
+        font-size: 15px;
+        font-family: 'Dosis', sans-serif;
+    }
 }
